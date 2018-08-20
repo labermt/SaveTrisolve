@@ -1,4 +1,9 @@
 <resources>
 
     <string name="action_settings">Settings</string>
+
+    <string name="tab_draw">Draw</string>
+    <string name="tab_analyze">Analyze</string>
+    <string name="hello_analyze_fragment">Hello Analyze Fragment</string>
+    <string name="hello_draw_fragment">Hello Draw Fragment</string>
 </resources>
