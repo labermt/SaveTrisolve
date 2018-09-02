@@ -5,10 +5,25 @@
     android:layout_height="match_parent"
     tools:context=".AnalyzeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RadioGroup
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_analyze_fragment" />
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton android:id="@+id/radio_side_angle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/side_angle" />
+        <RadioButton android:id="@+id/radio_polar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/polar" />
+        <RadioButton android:id="@+id/radio_xy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/xy" />
+    </RadioGroup>
 
 </FrameLayout>

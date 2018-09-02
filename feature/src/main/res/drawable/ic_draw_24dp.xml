@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24.0"
+    android:viewportHeight="24.0">
+
+    <group android:name="compass">
+
+        <path
+            android:name="legs"
+            android:pathData="M 20,23
+            l -7,-14
+            a 3,3, 0 1 0 -2,0
+            l -7,14"
+            android:strokeColor="@android:color/white"
+            android:strokeLineCap="square"
+            android:strokeWidth="1" />
+
+        <path
+            android:name="hinge"
+            android:pathData="M 7,14
+            a 9,9, 0 0 0 13,-8"
+            android:strokeColor="@android:color/white"
+            android:strokeLineCap="round"
+            android:strokeWidth="1" />
+
+        <path
+            android:name="handle"
+            android:pathData="M 12,1
+            v 2"
+            android:strokeColor="@android:color/white"
+            android:strokeLineCap="round"
+            android:strokeWidth="1" />
+
+    </group>
+
+</vector>

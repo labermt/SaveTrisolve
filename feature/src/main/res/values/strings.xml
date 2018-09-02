@@ -4,6 +4,10 @@
 
     <string name="tab_draw">Draw</string>
     <string name="tab_analyze">Analyze</string>
+    <string name="side_angle">Side-Angle</string>
+    <string name="polar">Polar</string>
+    <string name="xy">x, y</string>
+
     <string name="hello_analyze_fragment">Hello Analyze Fragment</string>
     <string name="hello_draw_fragment">Hello Draw Fragment</string>
 </resources>

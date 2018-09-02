@@ -2,23 +2,33 @@ package com.bessermt.trisolve.feature;
 
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.util.Log;
-import android.widget.TextView;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
+// import com.google.android.material.floatingactionbutton.FloatingActionButton;
+// import com.google.android.material.snackbar.Snackbar;
+// import com.google.android.material.tabs.TabLayout;
+
 import java.util.ArrayList;
 import java.util.List;
+
+// import androidx.appcompat.app.AppCompatActivity;
+// import androidx.appcompat.widget.Toolbar;
+// import androidx.fragment.app.Fragment;
+// import androidx.fragment.app.FragmentManager;
+// import androidx.fragment.app.FragmentPagerAdapter;
+// import androidx.viewpager.widget.ViewPager;
 
 public class MainActivity extends AppCompatActivity
         implements DrawFragment.OnFragmentInteractionListener,
@@ -55,6 +65,11 @@ public class MainActivity extends AppCompatActivity
         final TabLayout tabLayout = findViewById(R.id.tabs);
 
         tabLayout.setupWithViewPager(viewPager_);
+
+        tabLayout.getTabAt(0).setIcon(R.drawable.ic_draw_24dp);
+        tabLayout.getTabAt(1).setIcon(R.drawable.ic_analyze_24dp);
+
+        // https://stackoverflow.com/questions/34562117/how-do-i-change-the-color-of-icon-of-the-selected-tab-of-tablayout
 
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -130,12 +145,12 @@ public class MainActivity extends AppCompatActivity
         @Override
         public CharSequence getPageTitle(int position) {
             CharSequence result = null;
-            if (position < fragmentTitleList.size()) {
-                result = fragmentTitleList.get(position);
-            }
-            else {
-                Log.e(TAG, "getPageTitle(int) domain error.");
-            }
+            //if (position < fragmentTitleList.size()) {
+            //    result = fragmentTitleList.get(position);
+            //}
+            //else {
+            //    Log.e(TAG, "getPageTitle(int) domain error.");
+            //}
 
             return result;
         }
