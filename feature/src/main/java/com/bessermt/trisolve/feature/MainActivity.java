@@ -46,9 +46,14 @@ public class MainActivity extends AppCompatActivity
 
     private void setupViewPager(ViewPager viewPager)
     {
+        final String draw=getString(R.string.tab_draw);
+        final String analyze=getString(R.string.tab_analyze);
+
         SectionsPagerAdapter adapter = new SectionsPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new DrawFragment(), "Draw");
-        adapter.addFragment(new AnalyzeFragment(), "Analyze");
+
+        adapter.addFragment(new DrawFragment(), draw);
+        adapter.addFragment(new AnalyzeFragment(), analyze);
+
         viewPager.setAdapter(adapter);
     }
 
