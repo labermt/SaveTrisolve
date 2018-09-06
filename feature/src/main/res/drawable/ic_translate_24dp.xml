@@ -6,38 +6,40 @@
     android:viewportWidth="24.0"
     android:viewportHeight="24.0">
 
-    <group android:name="compass">
+    <group android:name="cartesian_move">
 
         <path
-            android:name="spring"
-            android:pathData="M 12,11
-            a 4,4, 0 1 0 -0.0001,0"
-            android:strokeColor="@android:color/white"
-            android:strokeLineCap="square"
-            android:strokeWidth="2" />
-
-        <path
-            android:name="legs"
-            android:pathData="M 22,23
-            l -7,-13
-            m -6,0
-            l -7,13"
+            android:name="x_axis"
+            android:pathData="M 22,18
+            l -21,0"
             android:strokeColor="@android:color/white"
             android:strokeLineCap="round"
             android:strokeWidth="2" />
 
         <path
-            android:name="hinge"
-            android:pathData="M 4,14
-            a 11,11, 0 0 0 18,-8"
+            android:name="y_axis"
+            android:pathData="M 6,2
+            l 0,21"
             android:strokeColor="@android:color/white"
             android:strokeLineCap="round"
             android:strokeWidth="2" />
 
         <path
-            android:name="handle"
-            android:pathData="M 12,1
-            v 2"
+            android:name="x_move"
+            android:pathData="M 22,18
+            l -3,-3
+            m 3,3
+            l -3,3"
+            android:strokeColor="@android:color/white"
+            android:strokeLineCap="round"
+            android:strokeWidth="2" />
+
+        <path
+            android:name="y_move"
+            android:pathData="M 6,2
+            l -3,3
+            m 3,-3
+            l 3,3"
             android:strokeColor="@android:color/white"
             android:strokeLineCap="round"
             android:strokeWidth="2" />

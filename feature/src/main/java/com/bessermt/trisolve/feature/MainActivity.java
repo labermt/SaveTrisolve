@@ -155,15 +155,34 @@ public class MainActivity extends AppCompatActivity
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        boolean result = false;
+        final int id = item.getItemId();
+
+        if (id == R.id.action_translate) {
+            // User chose the "Translate" item, show the translate UI...
+            result = true;
+        }
+        else if (id == R.id.action_settings) {
+            // User chose the "Settings" item, show the app settings UI...
+            result = true;
+        }
+        else {
+            // If we got here, the user's action was not recognized.
+            // Invoke the superclass to handle it.
+            result = super.onOptionsItemSelected(item);
         }
 
-        return super.onOptionsItemSelected(item);
+        return result;
     }
+
+// TODO:???
+//    public void onGroupItemClick(MenuItem item) {
+//        // One of the group items (using the onClick attribute) was clicked
+//        // The item parameter passed here indicates which item it is
+//        // All other menu item clicks are handled by onOptionsItemSelected()
+//    }
+//
 
     /**
      * A native method that is implemented by the 'native-lib' native library,

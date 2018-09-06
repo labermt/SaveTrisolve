@@ -1,49 +1,65 @@
 # Trisolve
-Triangle Solver Android App TODO list
+Triangle Solver Android App TODO list  
 
 
-Side, Angle
+Primary Color Blue 500
 
-| A |, /_ A
-| B |, /_ B
-| C |, /_ C
+"Variable"/"Constant" toggle state on label followed by Edittext.  
 
-
-Theta, Radius, Center
-
-Theta A
-Theta B
-Theta C
-Radius
-X Center
-Y Center
+Entering data changes edittext to "Constant".  
+Changing toggle state to "Variable" clears data and attempts to calculate.  
+Toggle state disabled and "Variable" iff empty.  
 
 
-x, y
-
-Ax, Ay
-Bx, By
-Cx, Cy
+Global Clear Button  
 
 
-Transform
+Side, Angle:  
 
-Translate, x, y
-Rotate, Theta, (x, y)
-Reflect, (Theta, (x, y))
-Dilate, factor, (x, y)
+| BC |, /_ A  
+| AC |, /_ B  
+| AB |, /_ C  
+
+Allow AAA to default to R == 1.0.
+Allow ASS to have 2 solutions.
+
+Theta, Radius, Center:  
+
+Theta A  
+Theta B  
+Theta C  
+Radius  
+X Center  
+Y Center  
 
 
-Dimensions
+x, y:  
 
-height A
-height B
-height C
-perimeter
-area
+Ax, Ay  
+Bx, By  
+Cx, Cy  
 
 
-Settings
+Transform:  Implement as "Action Provider"
 
-Degrees, Radians, Gradians, Ns
-1, 0.1, 0.01, 0.001, 0.0001, 0.00001
+Translate, x, y  
+Rotate, Theta, (x, y)  
+Reflect, (Theta, (x, y))  
+Dilate, factor, (x, y)  
+
+
+Dimensions:  
+
+height A  
+height B  
+height C  
+perimeter  
+area  
+
+
+Settings:  
+
+Degrees, Radians, Gradians, Ns  
+
+1, 0.1, 0.01, 0.001, 0.0001, 0.00001  
+
