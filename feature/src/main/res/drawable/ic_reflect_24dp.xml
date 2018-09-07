@@ -18,21 +18,21 @@
             l 0, 1
             m 0, 5
             l 0, 1"
-            android:strokeColor="@color/light_gray"
+            android:strokeColor="@android:color/white"
             android:strokeLineCap="round"
             android:strokeWidth="2" />
 
         <path
             android:name="left"
-            android:pathData="M 1,20
-            l 8, 0
+            android:pathData="M 1,20.5
+            l 9, 0
             m 0, 0
-            l -8, -16
+            l -9, -17
             m 0, 0
-            l 0, 16"
-            android:strokeColor="@color/light_gray"
+            l 0, 17"
+            android:strokeColor="@android:color/white"
             android:strokeLineCap="round"
-            android:strokeWidth="2" />
+            android:strokeWidth="1" />
 
         <path
             android:name="right"

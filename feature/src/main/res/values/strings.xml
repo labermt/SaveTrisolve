@@ -11,6 +11,7 @@
     <string name="theta">Ɵ</string>
     <string name="degree">°</string>
 
+    <string name="action_transform">Transform</string>
     <string name="action_translate">Translate</string>
     <string name="action_rotate">Rotate</string>
     <string name="action_reflect">Reflect</string>

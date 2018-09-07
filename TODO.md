@@ -40,7 +40,7 @@ Bx, By
 Cx, Cy  
 
 
-Transform:  Implement as "Action Provider"
+Transform:  Implement as "Action Provider". (fields) are optional.
 
 Translate, x, y  
 Rotate, Theta, (x, y)  
@@ -55,6 +55,7 @@ height B
 height C  
 perimeter  
 area  
+
 
 
 Settings:  

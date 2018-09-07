@@ -160,7 +160,19 @@ public class MainActivity extends AppCompatActivity
         final int id = item.getItemId();
 
         if (id == R.id.action_translate) {
-            // User chose the "Translate" item, show the translate UI...
+            // User chose the "Translate" item, show the translate action provider  UI...
+            result = true;
+        }
+        else if (id == R.id.action_rotate) {
+            // User chose the "Rotate" item, show the app rotate action provider UI...
+            result = true;
+        }
+        else if (id == R.id.action_reflect) {
+            // User chose the "Reflect" item, show the app reflect action provider UI...
+            result = true;
+        }
+        else if (id == R.id.action_dilate) {
+            // User chose the "Dilate" item, show the app dilate action provider UI...
             result = true;
         }
         else if (id == R.id.action_settings) {

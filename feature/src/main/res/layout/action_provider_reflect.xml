@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Must use a RelativeLayout for Action Provider layout_width to work. -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_reflect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reflect" />
+
+        <EditText
+            android:id="@+id/et_theta"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/theta"
+            android:inputType="number|numberDecimal|numberSigned" />
+
+        <TextView
+            android:id="@+id/tv_label_degree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/unit_label_margin"
+            android:text="@string/degree" />
+
+        <EditText
+            android:id="@+id/et_translate_x"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/x"
+            android:inputType="number|numberDecimal|numberSigned" />
+
+        <EditText
+            android:id="@+id/et_translate_y"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/y"
+            android:inputType="number|numberDecimal|numberSigned" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</RelativeLayout>
