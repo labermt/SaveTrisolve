@@ -11,24 +11,24 @@
             app:showAsAction="ifRoom"/>
         <item
             android:id="@+id/action_rotate"
-            android:icon="@drawable/ic_translate_24dp"
+            android:icon="@drawable/ic_rotate_24dp"
             android:title="@string/action_rotate"
             app:showAsAction="ifRoom"/>
         <item
             android:id="@+id/action_reflect"
-            android:icon="@drawable/ic_translate_24dp"
+            android:icon="@drawable/ic_reflect_24dp"
             android:title="@string/action_reflect"
             app:showAsAction="ifRoom"/>
         <item
             android:id="@+id/action_dilate"
-            android:icon="@drawable/ic_translate_24dp"
+            android:icon="@drawable/ic_dilate_24dp"
             android:title="@string/action_dilate"
             app:showAsAction="ifRoom"/>
     </group>
 
     <item
         android:id="@+id/action_settings"
-        android:orderInCategory="100"
+        android:icon="@drawable/ic_settings_24dp"
         android:title="@string/action_settings"
         app:showAsAction="never" />
 </menu>
