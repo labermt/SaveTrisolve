@@ -52,6 +52,7 @@
                     android:layout_height="wrap_content"
                     android:textOn="@string/label_side_bc"
                     android:textOff="@string/label_side_bc"
+                    android:enabled="false"
                     android:focusable="false"
                     android:focusableInTouchMode="false"
                     android:layout_centerVertical="true" />
@@ -64,11 +65,12 @@
                     android:hint="@string/hint_length" />
 
                 <ToggleButton
-                    android:id="@+id/tv_label_angle_a"
+                    android:id="@+id/tb_label_angle_a"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textOn="@string/label_angle_a"
                     android:textOff="@string/label_angle_a"
+                    android:enabled="false"
                     android:focusable="false"
                     android:focusableInTouchMode="false"
                     android:layout_centerVertical="true" />
@@ -78,6 +80,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:inputType="number|numberDecimal|numberSigned"
+                    android:nextFocusDown="@id/et_angle_a_degree_minute"
                     android:hint="@string/hint_theta" />
 
                 <TextView
@@ -90,7 +93,10 @@
                     android:id="@+id/et_angle_a_degree_minute"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:inputType="number|numberDecimal|numberSigned"
+                    android:gravity="right"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:nextFocusDown="@id/et_angle_a_degree_second"
                     android:hint="@string/hint_minute"
                     android:visibility="visible" />
 
@@ -105,8 +111,11 @@
                     android:id="@+id/et_angle_a_degree_second"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:inputType="number|numberDecimal|numberSigned"
+                    android:gravity="right"
+                    android:inputType="number"
+                    android:maxLength="2"
                     android:hint="@string/hint_second"
+                    android:nextFocusDown="@id/et_angle_b"
                     android:visibility="visible" />
 
                 <TextView
@@ -128,6 +137,7 @@
                     android:layout_height="wrap_content"
                     android:textOn="@string/label_side_ca"
                     android:textOff="@string/label_side_ca"
+                    android:enabled="false"
                     android:focusable="false"
                     android:focusableInTouchMode="false"
                     android:layout_centerVertical="true" />
@@ -140,11 +150,12 @@
                     android:hint="@string/hint_length" />
 
                 <ToggleButton
-                    android:id="@+id/tv_label_angle_b"
+                    android:id="@+id/tb_label_angle_b"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textOn="@string/label_angle_b"
                     android:textOff="@string/label_angle_b"
+                    android:enabled="false"
                     android:focusable="false"
                     android:focusableInTouchMode="false"
                     android:layout_centerVertical="true" />
@@ -154,6 +165,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:inputType="number|numberDecimal|numberSigned"
+                    android:nextFocusDown="@id/et_angle_b_degree_minute"
                     android:hint="@string/hint_theta" />
 
                 <TextView
@@ -166,7 +178,10 @@
                     android:id="@+id/et_angle_b_degree_minute"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:inputType="number|numberDecimal|numberSigned"
+                    android:gravity="right"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:nextFocusDown="@id/et_angle_b_degree_second"
                     android:hint="@string/hint_minute"
                     android:visibility="visible" />
 
@@ -181,7 +196,10 @@
                     android:id="@+id/et_angle_b_degree_second"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:inputType="number|numberDecimal|numberSigned"
+                    android:gravity="right"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:nextFocusDown="@id/et_angle_c"
                     android:hint="@string/hint_second"
                     android:visibility="visible" />
 
@@ -204,6 +222,7 @@
                     android:layout_height="wrap_content"
                     android:textOn="@string/label_side_ab"
                     android:textOff="@string/label_side_ab"
+                    android:enabled="false"
                     android:focusable="false"
                     android:focusableInTouchMode="false"
                     android:layout_centerVertical="true" />
@@ -216,11 +235,12 @@
                     android:hint="@string/hint_length" />
 
                 <ToggleButton
-                    android:id="@+id/tv_label_angle_c"
+                    android:id="@+id/tb_label_angle_c"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textOn="@string/label_angle_c"
                     android:textOff="@string/label_angle_c"
+                    android:enabled="false"
                     android:focusable="false"
                     android:focusableInTouchMode="false"
                     android:layout_centerVertical="true" />
@@ -230,6 +250,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:inputType="number|numberDecimal|numberSigned"
+                    android:nextFocusDown="@id/et_angle_c_degree_minute"
                     android:hint="@string/hint_theta" />
 
                 <TextView
@@ -242,7 +263,10 @@
                     android:id="@+id/et_angle_c_degree_minute"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:inputType="number|numberDecimal|numberSigned"
+                    android:gravity="right"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:nextFocusDown="@id/et_angle_c_degree_second"
                     android:hint="@string/hint_minute"
                     android:visibility="visible" />
 
@@ -257,7 +281,9 @@
                     android:id="@+id/et_angle_c_degree_second"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:inputType="number|numberDecimal|numberSigned"
+                    android:gravity="right"
+                    android:inputType="number"
+                    android:maxLength="2"
                     android:hint="@string/hint_second"
                     android:visibility="visible" />
 

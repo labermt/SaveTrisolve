@@ -59,7 +59,15 @@ area
 
 Settings:  
 
-Degrees, Radians, Gradians, D:M:S, Ns
+Degrees, Radians, Gradians, deg:mm:ss, Ns
 
 1, 0.1, 0.01, 0.001, 0.0001, 0.00001  
+
+----
+
+Proposed Enhancements:
+
+Create a Length and Angle Picker dialog.  Much like https://developer.android.com/reference/android/app/DatePickerDialog.
+
+Optional lettering/Colors indicating sides and angles.
 
