@@ -17,34 +17,34 @@
             android:text="@string/reflect" />
 
         <EditText
-            android:id="@+id/et_theta"
+            android:id="@+id/et_angle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:hint="@string/theta"
+            android:hint="@string/hint_theta"
             android:inputType="number|numberDecimal|numberSigned" />
 
         <TextView
-            android:id="@+id/tv_label_degree"
+            android:id="@+id/tv_label_angle_units"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/unit_label_margin"
-            android:text="@string/degree" />
+            android:text="@string/unknown" />
 
         <EditText
-            android:id="@+id/et_translate_x"
+            android:id="@+id/et_x"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:hint="@string/x"
+            android:hint="@string/hint_x"
             android:inputType="number|numberDecimal|numberSigned" />
 
         <EditText
-            android:id="@+id/et_translate_y"
+            android:id="@+id/et_y"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:hint="@string/y"
+            android:hint="@string/hint_y"
             android:inputType="number|numberDecimal|numberSigned" />
 
     </android.support.v7.widget.LinearLayoutCompat>

@@ -2,14 +2,38 @@
 
     <string name="tab_draw">Draw</string>
     <string name="tab_analyze">Analyze</string>
-    <string name="side_angle">Side-Angle</string>
-    <string name="polar">Polar</string>
-    <string name="xy">x, y</string>
 
-    <string name="x">x</string>
-    <string name="y">y</string>
-    <string name="theta">Ɵ</string>
-    <string name="degree">°</string>
+    <string name="unknown">\?</string>
+
+    <!--TODO: May no longer be needed:-->
+    <string name="side_angle">Side, Angle</string>
+    <string name="xy">x, y</string>
+    <string name="polar">r, Ɵ</string>
+
+    <string name="title_side">Side</string>
+    <string name="title_angle">Angle</string>
+
+    <string name="hint_length">length</string>
+    <string name="hint_x">x</string>
+    <string name="hint_y">y</string>
+    <string name="hint_radius">radius</string>
+    <string name="hint_theta">Ɵ</string>
+    <string name="hint_minute">mm</string>
+    <string name="hint_second">ss</string>
+
+    <string name="label_side_bc">| BC | =</string>
+    <string name="label_angle_a">/_ A =</string>
+    <string name="label_side_ca">| CA | =</string>
+    <string name="label_angle_b">/_ B =</string>
+    <string name="label_side_ab">| AB | =</string>
+    <string name="label_angle_c">/_ C =</string>
+
+    <string name="label_unit_degree">°</string>
+    <string name="label_unit_minute">\'</string>
+    <string name="label_unit_second">\"</string>
+    <string name="label_unit_radian">rad</string>
+    <string name="label_unit_gradian">grad</string>
+    <string name="label_unit_per_n">/n</string>
 
     <string name="action_transform">Transform</string>
     <string name="action_translate">Translate</string>

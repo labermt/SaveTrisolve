@@ -1,4 +1,5 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="table_margin">8dp</dimen>
     <dimen name="unit_label_margin">8dp</dimen>
 </resources>

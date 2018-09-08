@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -23,25 +22,25 @@
             android:id="@+id/tabs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:tabMaxWidth="0dp"
             app:tabGravity="fill"
+            app:tabMaxWidth="0dp"
             app:tabMode="fixed">
 
             <android.support.design.widget.TabItem
                 android:id="@+id/tabDraw"
-                android:contentDescription="@string/tab_draw"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/tab_draw"
                 android:icon="@drawable/ic_draw_24dp"
                 android:text="@string/tab_draw" />
 
             <android.support.design.widget.TabItem
                 android:id="@+id/tabAnalyze"
-                android:contentDescription="@string/tab_analyze"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/tab_analyze"
                 android:icon="@drawable/ic_analyze_24dp"
-                android:text="@string/tab_analyze"/>
+                android:text="@string/tab_analyze" />
 
         </android.support.design.widget.TabLayout>
 

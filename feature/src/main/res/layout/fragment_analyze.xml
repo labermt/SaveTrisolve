@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,124 +12,265 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <TableLayout
-                android:id="@+id/tl_transform"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:stretchColumns="1,2,3"
-                android:layout_marginEnd="8dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp">
-
-                <TableRow>
-
-                    <Button
-                        android:id="@+id/btn_translate"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/translate" />
-
-                    <EditText
-                        android:id="@+id/et_translate_x"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_column="2"
-                        android:hint="@string/x"
-                        android:inputType="number|numberDecimal|numberSigned" />
-
-                    <EditText
-                        android:id="@+id/et_translate_y"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/y"
-                        android:inputType="number" />
-
-                </TableRow>
-
-                <TableRow>
-
-                    <Button
-                        android:id="@+id/btn_rotate"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/rotate" />
-
-                    <EditText
-                        android:id="@+id/et_rotate_theta"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/theta"
-                        android:inputType="number" />
-
-                    <EditText
-                        android:id="@+id/et_rotate_x"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/x"
-                        android:inputType="number" />
-
-                    <EditText
-                        android:id="@+id/et_rotate_y"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/y"
-                        android:inputType="number" />
-
-                </TableRow>
-
-                <TableRow>
-
-                </TableRow>
-
-                <TableRow>
-
-                </TableRow>
-
-            </TableLayout>
-
-        </ScrollView>
-
-        <RadioGroup
-            android:id="@+id/rg_coord_system"
+        <TableLayout
+            android:id="@+id/tableLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
+            android:layout_margin="@dimen/table_margin"
+            android:stretchColumns="1,3,5,7"
+            android:shrinkColumns="*">
 
-            <RadioButton
-                android:id="@+id/radio_side_angle"
+            <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:checked="true"
-                android:text="@string/side_angle" />
+                android:layout_height="wrap_content">
 
-            <RadioButton
-                android:id="@+id/radio_polar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/polar" />
+                <TextView
+                    android:id="@+id/tv_title_side"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center"
+                    android:text="@string/title_side" />
 
-            <RadioButton
-                android:id="@+id/radio_xy"
+                <TextView
+                    android:id="@+id/tv_title_angle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_gravity="center"
+                    android:text="@string/title_angle" />
+
+            </TableRow>
+
+            <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/xy" />
-        </RadioGroup>
+                android:layout_height="wrap_content">
+
+                <ToggleButton
+                    android:id="@+id/tb_label_side_bc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textOn="@string/label_side_bc"
+                    android:textOff="@string/label_side_bc"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:layout_centerVertical="true" />
+
+                <EditText
+                    android:id="@+id/et_side_bc_length"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number|numberDecimal|numberSigned"
+                    android:hint="@string/hint_length" />
+
+                <ToggleButton
+                    android:id="@+id/tv_label_angle_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textOn="@string/label_angle_a"
+                    android:textOff="@string/label_angle_a"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:layout_centerVertical="true" />
+
+                <EditText
+                    android:id="@+id/et_angle_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number|numberDecimal|numberSigned"
+                    android:hint="@string/hint_theta" />
+
+                <TextView
+                    android:id="@+id/tv_label_angle_a_units"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unknown" />
+
+                <EditText
+                    android:id="@+id/et_angle_a_degree_minute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number|numberDecimal|numberSigned"
+                    android:hint="@string/hint_minute"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_label_angle_a_degree_minute_units"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_unit_minute"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/et_angle_a_degree_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number|numberDecimal|numberSigned"
+                    android:hint="@string/hint_second"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_label_angle_a_degree_second_units"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_unit_second"
+                    android:visibility="visible" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ToggleButton
+                    android:id="@+id/tb_label_side_ca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textOn="@string/label_side_ca"
+                    android:textOff="@string/label_side_ca"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:layout_centerVertical="true" />
+
+                <EditText
+                    android:id="@+id/et_side_ca_length"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number|numberDecimal|numberSigned"
+                    android:hint="@string/hint_length" />
+
+                <ToggleButton
+                    android:id="@+id/tv_label_angle_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textOn="@string/label_angle_b"
+                    android:textOff="@string/label_angle_b"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:layout_centerVertical="true" />
+
+                <EditText
+                    android:id="@+id/et_angle_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number|numberDecimal|numberSigned"
+                    android:hint="@string/hint_theta" />
+
+                <TextView
+                    android:id="@+id/tv_label_angle_b_units"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unknown" />
+
+                <EditText
+                    android:id="@+id/et_angle_b_degree_minute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number|numberDecimal|numberSigned"
+                    android:hint="@string/hint_minute"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_label_angle_b_degree_minute_units"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_unit_minute"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/et_angle_b_degree_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number|numberDecimal|numberSigned"
+                    android:hint="@string/hint_second"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_label_angle_b_degree_second_units"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_unit_second"
+                    android:visibility="visible" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ToggleButton
+                    android:id="@+id/tb_label_side_ab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textOn="@string/label_side_ab"
+                    android:textOff="@string/label_side_ab"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:layout_centerVertical="true" />
+
+                <EditText
+                    android:id="@+id/et_side_ab_length"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number|numberDecimal|numberSigned"
+                    android:hint="@string/hint_length" />
+
+                <ToggleButton
+                    android:id="@+id/tv_label_angle_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textOn="@string/label_angle_c"
+                    android:textOff="@string/label_angle_c"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:layout_centerVertical="true" />
+
+                <EditText
+                    android:id="@+id/et_angle_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number|numberDecimal|numberSigned"
+                    android:hint="@string/hint_theta" />
+
+                <TextView
+                    android:id="@+id/tv_label_angle_c_units"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unknown" />
+
+                <EditText
+                    android:id="@+id/et_angle_c_degree_minute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number|numberDecimal|numberSigned"
+                    android:hint="@string/hint_minute"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_label_angle_c_degree_minute_units"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_unit_minute"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/et_angle_c_degree_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number|numberDecimal|numberSigned"
+                    android:hint="@string/hint_second"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_label_angle_c_degree_second_units"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_unit_second"
+                    android:visibility="visible" />
+
+            </TableRow>
+
+        </TableLayout>
 
     </android.support.constraint.ConstraintLayout>
 

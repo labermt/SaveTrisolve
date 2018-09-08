@@ -57,10 +57,9 @@ perimeter
 area  
 
 
-
 Settings:  
 
-Degrees, Radians, Gradians, Ns  
+Degrees, Radians, Gradians, D:M:S, Ns
 
 1, 0.1, 0.01, 0.001, 0.0001, 0.00001  
 
