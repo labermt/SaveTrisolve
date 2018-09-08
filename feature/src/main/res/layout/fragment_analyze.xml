@@ -54,8 +54,7 @@
                     android:textOff="@string/label_side_bc"
                     android:enabled="false"
                     android:focusable="false"
-                    android:focusableInTouchMode="false"
-                    android:layout_centerVertical="true" />
+                    android:focusableInTouchMode="false" />
 
                 <EditText
                     android:id="@+id/et_side_bc_length"
@@ -72,8 +71,7 @@
                     android:textOff="@string/label_angle_a"
                     android:enabled="false"
                     android:focusable="false"
-                    android:focusableInTouchMode="false"
-                    android:layout_centerVertical="true" />
+                    android:focusableInTouchMode="false" />
 
                 <EditText
                     android:id="@+id/et_angle_a"
@@ -93,7 +91,7 @@
                     android:id="@+id/et_angle_a_degree_minute"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="right"
+                    android:gravity="end"
                     android:inputType="number"
                     android:maxLength="2"
                     android:nextFocusDown="@id/et_angle_a_degree_second"
@@ -111,7 +109,7 @@
                     android:id="@+id/et_angle_a_degree_second"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="right"
+                    android:gravity="end"
                     android:inputType="number"
                     android:maxLength="2"
                     android:hint="@string/hint_second"
@@ -139,8 +137,7 @@
                     android:textOff="@string/label_side_ca"
                     android:enabled="false"
                     android:focusable="false"
-                    android:focusableInTouchMode="false"
-                    android:layout_centerVertical="true" />
+                    android:focusableInTouchMode="false" />
 
                 <EditText
                     android:id="@+id/et_side_ca_length"
@@ -157,8 +154,7 @@
                     android:textOff="@string/label_angle_b"
                     android:enabled="false"
                     android:focusable="false"
-                    android:focusableInTouchMode="false"
-                    android:layout_centerVertical="true" />
+                    android:focusableInTouchMode="false" />
 
                 <EditText
                     android:id="@+id/et_angle_b"
@@ -178,7 +174,7 @@
                     android:id="@+id/et_angle_b_degree_minute"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="right"
+                    android:gravity="end"
                     android:inputType="number"
                     android:maxLength="2"
                     android:nextFocusDown="@id/et_angle_b_degree_second"
@@ -196,7 +192,7 @@
                     android:id="@+id/et_angle_b_degree_second"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="right"
+                    android:gravity="end"
                     android:inputType="number"
                     android:maxLength="2"
                     android:nextFocusDown="@id/et_angle_c"
@@ -224,8 +220,7 @@
                     android:textOff="@string/label_side_ab"
                     android:enabled="false"
                     android:focusable="false"
-                    android:focusableInTouchMode="false"
-                    android:layout_centerVertical="true" />
+                    android:focusableInTouchMode="false" />
 
                 <EditText
                     android:id="@+id/et_side_ab_length"
@@ -242,8 +237,7 @@
                     android:textOff="@string/label_angle_c"
                     android:enabled="false"
                     android:focusable="false"
-                    android:focusableInTouchMode="false"
-                    android:layout_centerVertical="true" />
+                    android:focusableInTouchMode="false" />
 
                 <EditText
                     android:id="@+id/et_angle_c"
@@ -263,7 +257,7 @@
                     android:id="@+id/et_angle_c_degree_minute"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="right"
+                    android:gravity="end"
                     android:inputType="number"
                     android:maxLength="2"
                     android:nextFocusDown="@id/et_angle_c_degree_second"
@@ -281,7 +275,7 @@
                     android:id="@+id/et_angle_c_degree_second"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="right"
+                    android:gravity="end"
                     android:inputType="number"
                     android:maxLength="2"
                     android:hint="@string/hint_second"
