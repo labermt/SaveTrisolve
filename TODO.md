@@ -71,3 +71,5 @@ Create a Length and Angle Picker dialog.  Much like https://developer.android.co
 
 Optional lettering/Colors indicating sides and angles.
 
+Normalize action, transform triangle to unit circle with base == | BC |
+

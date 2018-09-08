@@ -13,7 +13,7 @@
         android:layout_height="match_parent">
 
         <TableLayout
-            android:id="@+id/tableLayout"
+            android:id="@+id/tl_side_angle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/table_margin"
@@ -227,6 +227,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:inputType="number|numberDecimal|numberSigned"
+                    android:imeOptions="actionDone"
                     android:hint="@string/hint_length" />
 
                 <ToggleButton
@@ -278,6 +279,7 @@
                     android:gravity="end"
                     android:inputType="number"
                     android:maxLength="2"
+                    android:imeOptions="actionDone"
                     android:hint="@string/hint_second"
                     android:visibility="visible" />
 
@@ -291,6 +293,130 @@
             </TableRow>
 
         </TableLayout>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/fl_dimension"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/table_margin"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/tl_side_angle">
+
+            <TextView
+                android:id="@+id/tv_label_height"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/label_height" />
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ToggleButton
+                    android:id="@+id/tb_label_height_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:textOff="@string/label_angle_a"
+                    android:textOn="@string/label_angle_a" />
+
+                <EditText
+                    android:id="@+id/et_height_a"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:nextFocusDown="@id/et_height_b"
+                    android:hint="@string/hint_length"
+                    android:inputType="number|numberDecimal|numberSigned" />
+
+                <ToggleButton
+                    android:id="@+id/tb_label_height_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:textOff="@string/label_angle_b"
+                    android:textOn="@string/label_angle_b" />
+
+                <EditText
+                    android:id="@+id/et_height_b"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:nextFocusDown="@id/et_height_c"
+                    android:hint="@string/hint_length"
+                    android:inputType="number|numberDecimal|numberSigned" />
+
+                <ToggleButton
+                    android:id="@+id/tb_label_height_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:textOff="@string/label_angle_c"
+                    android:textOn="@string/label_angle_c" />
+
+                <EditText
+                    android:id="@+id/et_height_c"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:imeOptions="actionDone"
+                    android:hint="@string/hint_length"
+                    android:inputType="number|numberDecimal|numberSigned" />
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ToggleButton
+                    android:id="@+id/tb_label_perimeter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:textOff="@string/label_perimeter"
+                    android:textOn="@string/label_perimeter" />
+
+                <EditText
+                    android:id="@+id/et_perimeter"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:imeOptions="actionDone"
+                    android:hint="@string/hint_length"
+                    android:inputType="number|numberDecimal|numberSigned" />
+
+                <ToggleButton
+                    android:id="@+id/tb_label_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:textOff="@string/label_area"
+                    android:textOn="@string/label_area" />
+
+                <EditText
+                    android:id="@+id/et_area"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:imeOptions="actionDone"
+                    android:hint="@string/hint_area"
+                    android:inputType="number|numberDecimal|numberSigned" />
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+        </android.support.v7.widget.LinearLayoutCompat>
 
     </android.support.constraint.ConstraintLayout>
 

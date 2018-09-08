@@ -14,13 +14,14 @@
     <string name="title_side">Side</string>
     <string name="title_angle">Angle</string>
 
-    <string name="hint_length">length</string>
     <string name="hint_x">x</string>
     <string name="hint_y">y</string>
     <string name="hint_radius">radius</string>
     <string name="hint_theta">Ɵ</string>
     <string name="hint_minute">mm</string>
     <string name="hint_second">ss</string>
+    <string name="hint_length">length</string>
+    <string name="hint_area">size</string>
 
     <string name="label_side_bc">| BC | =</string>
     <string name="label_angle_a">/_ A =</string>
@@ -35,6 +36,10 @@
     <string name="label_unit_radian">rad</string>
     <string name="label_unit_gradian">grad</string>
     <string name="label_unit_per_n">/n</string>
+
+    <string name="label_height">Height:</string>
+    <string name="label_perimeter">Perimeter =</string>
+    <string name="label_area">Area =</string>
 
     <string name="action_transform">Transform</string>
     <string name="action_translate">Translate</string>
