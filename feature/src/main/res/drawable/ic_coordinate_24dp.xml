@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24.0"
+    android:viewportHeight="24.0">
+
+    <group android:name="cartesian_move">
+
+        <path
+            android:name="x_axis"
+            android:pathData="M 22,18
+            l -21,0"
+            android:strokeColor="@android:color/white"
+            android:strokeLineCap="round"
+            android:strokeWidth="2" />
+
+        <path
+            android:name="y_axis"
+            android:pathData="M 6,2
+            l 0,21"
+            android:strokeColor="@android:color/white"
+            android:strokeLineCap="round"
+            android:strokeWidth="2" />
+
+        <path
+            android:name="x_move"
+            android:pathData="M 22,18
+            l -3,-3
+            m 3,3
+            l -3,3"
+            android:strokeColor="@android:color/white"
+            android:strokeLineCap="round"
+            android:strokeWidth="2" />
+
+        <path
+            android:name="y_move"
+            android:pathData="M 6,2
+            l -3,3
+            m 3,-3
+            l 3,3"
+            android:strokeColor="@android:color/white"
+            android:strokeLineCap="round"
+            android:strokeWidth="2" />
+
+    </group>
+
+</vector>

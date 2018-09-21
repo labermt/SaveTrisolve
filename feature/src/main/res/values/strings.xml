@@ -6,11 +6,6 @@
     <!--TODO: Placeholder:-->
     <string name="unknown">\?</string>
 
-    <!--TODO: May no longer be needed:-->
-    <string name="side_angle">Side, Angle</string>
-    <string name="xy">x, y</string>
-    <string name="polar">r, Ɵ</string>
-
     <string name="title_side">Side</string>
     <string name="title_angle">Angle</string>
 
@@ -41,13 +36,20 @@
     <string name="label_perimeter">Perimeter =</string>
     <string name="label_area">Area =</string>
 
+    <string name="action_coordinate">Coordinate</string>
+    <string name="action_dimension">Side, Angle</string>
+    <string name="action_cartesian">x, y</string>
+    <string name="action_polar">r, Ɵ</string>
+
     <string name="action_transform">Transform</string>
     <string name="action_translate">Translate</string>
     <string name="action_rotate">Rotate</string>
     <string name="action_reflect">Reflect</string>
     <string name="action_dilate">Dilate</string>
 
+    <string name="action_overflow">Overflow</string>
     <string name="action_settings">Settings</string>
+    <string name="action_help">Help</string>
 
     <string name="translate">Translate</string>
     <string name="rotate">Rotate</string>

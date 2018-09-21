@@ -9,40 +9,26 @@
     <group android:name="flip">
 
         <path
-            android:name="mirror"
-            android:pathData="M 12,3
-            l 0, 1
-            m 0, 5
-            l 0, 1
-            m 0, 5
-            l 0, 1
-            m 0, 5
-            l 0, 1"
-            android:strokeColor="@android:color/white"
+            android:name="begin"
+            android:pathData="M 1,18
+            h 8
+            m 0, 0
+            l -8, -16
+            m 0, 0
+            v 16"
+            android:strokeColor="@android:color/black"
             android:strokeLineCap="round"
             android:strokeWidth="2" />
 
         <path
-            android:name="left"
-            android:pathData="M 1,20.5
-            l 9, 0
-            m 0, 0
-            l -9, -17
-            m 0, 0
-            l 0, 17"
-            android:strokeColor="@android:color/white"
-            android:strokeLineCap="round"
-            android:strokeWidth="1" />
-
-        <path
-            android:name="right"
-            android:pathData="M 23,20
-            l -8, 0
+            android:name="begin"
+            android:pathData="M 23,18
+            h -8
             m 0, 0
             l 8, -16
             m 0, 0
-            l 0, 16"
-            android:strokeColor="@android:color/white"
+            v 16"
+            android:strokeColor="@android:color/black"
             android:strokeLineCap="round"
             android:strokeWidth="2" />
 

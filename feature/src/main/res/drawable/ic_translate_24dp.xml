@@ -6,41 +6,29 @@
     android:viewportWidth="24.0"
     android:viewportHeight="24.0">
 
-    <group android:name="cartesian_move">
+    <group android:name="move">
 
         <path
-            android:name="x_axis"
-            android:pathData="M 22,18
-            l -21,0"
-            android:strokeColor="@android:color/white"
+            android:name="begin"
+            android:pathData="M 1,23
+            h 8
+            m 0, 0
+            l -8,-16
+            m 0, 0
+            v 16"
+            android:strokeColor="@android:color/black"
             android:strokeLineCap="round"
             android:strokeWidth="2" />
 
         <path
-            android:name="y_axis"
-            android:pathData="M 6,2
-            l 0,21"
-            android:strokeColor="@android:color/white"
-            android:strokeLineCap="round"
-            android:strokeWidth="2" />
-
-        <path
-            android:name="x_move"
-            android:pathData="M 22,18
-            l -3,-3
-            m 3,3
-            l -3,3"
-            android:strokeColor="@android:color/white"
-            android:strokeLineCap="round"
-            android:strokeWidth="2" />
-
-        <path
-            android:name="y_move"
-            android:pathData="M 6,2
-            l -3,3
-            m 3,-3
-            l 3,3"
-            android:strokeColor="@android:color/white"
+            android:name="end"
+            android:pathData="M 15,17
+            h 8
+            m 0, 0
+            l -8,-16
+            m 0, 0
+            v 16"
+            android:strokeColor="@android:color/black"
             android:strokeLineCap="round"
             android:strokeWidth="2" />
 
