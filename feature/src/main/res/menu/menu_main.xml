@@ -4,31 +4,6 @@
     tools:context="com.bessermt.trisolve.feature.MainActivity">
 
     <item
-        android:id="@+id/coordinate"
-        android:icon="@drawable/ic_coordinate_24dp"
-        android:title="@string/action_coordinate"
-        app:showAsAction="ifRoom|collapseActionView">
-
-        <menu>
-            <item
-                android:id="@+id/action_dimension"
-                android:icon="@drawable/ic_dimension_24dp"
-                android:title="@string/action_dimension"
-                app:showAsAction="ifRoom|collapseActionView"/>
-            <item
-                android:id="@+id/action_cartesian"
-                android:icon="@drawable/ic_cartesian_24dp"
-                android:title="@string/action_cartesian"
-                app:showAsAction="ifRoom|collapseActionView"/>
-            <item
-                android:id="@+id/action_polar"
-                android:icon="@drawable/ic_polar_24dp"
-                android:title="@string/action_polar"
-                app:showAsAction="ifRoom|collapseActionView"/>
-        </menu>
-    </item>
-
-    <item
         android:id="@+id/transform"
         android:icon="@drawable/ic_transform_24dp"
         android:title="@string/action_transform"
@@ -55,6 +30,31 @@
                 android:id="@+id/action_dilate"
                 android:icon="@drawable/ic_dilate_24dp"
                 android:title="@string/action_dilate"
+                app:showAsAction="ifRoom|collapseActionView"/>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/coordinate"
+        android:icon="@drawable/ic_coordinate_24dp"
+        android:title="@string/action_coordinate"
+        app:showAsAction="ifRoom|collapseActionView">
+
+        <menu>
+            <item
+                android:id="@+id/action_dimension"
+                android:icon="@drawable/ic_dimension_24dp"
+                android:title="@string/action_dimension"
+                app:showAsAction="ifRoom|collapseActionView"/>
+            <item
+                android:id="@+id/action_cartesian"
+                android:icon="@drawable/ic_cartesian_24dp"
+                android:title="@string/action_cartesian"
+                app:showAsAction="ifRoom|collapseActionView"/>
+            <item
+                android:id="@+id/action_polar"
+                android:icon="@drawable/ic_polar_24dp"
+                android:title="@string/action_polar"
                 app:showAsAction="ifRoom|collapseActionView"/>
         </menu>
     </item>

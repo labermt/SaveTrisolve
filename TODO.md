@@ -60,9 +60,10 @@ Menu Transform:  Implement as "Action Provider". (fields) are optional.
 - Dilate, factor, (x, y)
 
 Menu Coordinates:
-- side, angle (dimension)
-- x, y (cartesian)
-- r, theta (polar)
+Indicate which one is selected:
+    - side, angle (dimension)
+    - x, y (cartesian)
+    - r, theta (polar)
 
 Menu Overflow:
 - Settings
@@ -102,4 +103,6 @@ Save, Restore
 Persist current triangle across reboot.
 
 Paid/Free versions.
+
+Animate or otherwise highlight the current coordinate system selection in the menu.
 
