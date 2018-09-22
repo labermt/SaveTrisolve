@@ -11,6 +11,7 @@ Changing toggle state to "Variable" clears data and attempts to calculate.
 Toggle state disabled and "Variable" iff empty.  
 
 Global Clear Button
+Normalize Functionality (Side A on bottom, radius 1, center at 0,0)
 
 Side, Angle:  
 
